@@ -12,35 +12,35 @@ app.get('/', function (req, res) {
 app.get('/:v/:user/:gid1/:gid2', function (req, res) {
   console.log(req.params);
   var basePath = 'gist.githubusercontent.com';
-  var body = [];
-  var opts = {};
+  var body = []; 
+  var opts = {}; 
   opts.host = basePath;
   opts.path = path.join('/',req.params.user, req.params.gid1, 'raw');
   opts.method = 'GET';
-  opts.headers = {
+  opts.headers = { 
     Accept: '*/*',
     'User-Agent': 'curl/7.47.0'
-  };
+  };  
   
   console.log(opts);
 
   var request = https.request(opts, (gist1) => {
     gist1.on('data', (chunk) => {
-      console.log('CHUNK');
-      console.log(chunk);
       body.push(chunk);
-    });
+    }); 
 
     gist1.on('end', () => {
       var payload = Buffer.concat(body).toString();
       console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
       console.log(payload);
-    });
+    }); 
   
     gist1.on('error', function (err) {
       console.log(err)
-    });
+    }); 
   });
+
+  request.end();
 
   res.render('pages/dash', req.params);
 });
