@@ -1,0 +1,32 @@
+{
+  "name": "react-dash-server",
+  "version": "0.1.0",
+  "description": "Simple test harness for react dash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "react-dash-server"
+  },
+  "keywords": [
+    "react-dash",
+    "react",
+    "dash",
+    "dashboard",
+    "nvd3",
+    "chart",
+    "charting",
+    "vis",
+    "viz",
+    "visualization",
+    "map",
+    "choropleth"
+  ],
+  "author": "Paul Walker",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
