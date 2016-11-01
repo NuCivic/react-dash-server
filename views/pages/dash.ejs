@@ -1,21 +1,31 @@
-<h1>Check your dash</h1>
-<table>
-    <tr>
-        <td>React Dash Version</td>
-        <td><%= v %>
-    </tr>
-    <tr>
-        <td>Github User</td>
-        <td><%= user %>
-    </tr>
-    <tr>
-        <td>settings.js</td>
-        <td><%= gid1 %>
-    </tr>
-    <tr>
-        <td>customDataHandlers.js</td>
-        <td><%= gid2 %>
-    </tr>
-</table>
-<root></root>
-<script src="/lib/0.4/react-dash-demo.min.js">
+<head>
+    <script type="text/javascript">
+        expressDashSettings = <%- dashSettings %>;
+    </script>
+    <script src="/lib/0.4/react-dash-server.min.js"/>
+    <script type="text/javascript">
+        // some reason react load fails without this in express dev env
+        // this might not / should not be neccessary in prod
+        console.log('express', expressDashSettings);
+    </script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="/lib/0.4/react-dash-server.min.css"></link>
+</head>
+<body>
+    <h1>Check your dash</h1>
+    <table>
+        <tr>
+            <td>React Dash Version</td>
+            <td><%= v %>
+        </tr>
+        <tr>
+            <td>Github User</td>
+            <td><%= user %>
+        </tr>
+        <tr>
+            <td>settings.js</td>
+        I   <td><%= gid %>
+        </tr>
+    </table>
+    <div id="root"></div>
+</body>
