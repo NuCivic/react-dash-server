@@ -1,4 +1,5 @@
-# react-dash-server
+# react-dash-server -- UNDER CONSTRUCTION
+**this doesn't work yet**
 Very loose implementation of a test harness for [react dash]()
 
 ## Usage
