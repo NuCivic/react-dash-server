@@ -1,5 +1,7 @@
 # react-dash-server -- UNDER CONSTRUCTION
-This is a very loose implementation of a test harness for [react dash](https://github.com/NuCivic/react-dashboard). Currently 
+This is a very loosely implemented test harness for [react dash](https://github.com/NuCivic/react-dashboard). The express app allows you to use a gist as a configuration object to test dashboard implementations. It also allows you to load the demo sites for different versions (coming soon) of the react-dash library.
+
+**NOTE** that this is largely a proof of concept. In practice, react-dash development involves using custom data handling functions which cannot be loaded remotely for security reasons. For non-trivial react-dash development use the [react-dashboard-boilerplate project](https://github.com/NuCivic/react-dashboard-boilerplate) which provides a robust development environment, local dev server etc.
 
 ## Setup react-dash-server
 ### Requirements
