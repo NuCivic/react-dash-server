@@ -8,24 +8,29 @@
         // this might not / should not be neccessary in prod
         console.log('express', expressDashSettings);
     </script>
+    <link rel="stylesheet" href="/static/react-server.css"></link>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
     <link rel="stylesheet" href="/lib/0.4/react-dash-server.min.css"></link>
 </head>
 <body>
-    <h1>Check your dash</h1>
-    <table>
-        <tr>
-            <td>React Dash Version</td>
-            <td><%= v %>
-        </tr>
-        <tr>
-            <td>Github User</td>
-            <td><%= user %>
-        </tr>
-        <tr>
-            <td>settings.js</td>
-        I   <td><%= gid %>
-        </tr>
-    </table>
-    <div id="root"></div>
+    <div id="react-server-header">
+        <h1>Your Dash</h1>
+        <table>
+            <tr>
+                <td>React Dash Version</td>
+                <td><%= v %></td>
+            </tr>
+            <tr>
+                <td>Github User</td>
+                <td><%= user %></td>
+            </tr>
+            <tr>
+                <td>settings.js</td>
+            I   <td><%= gid %></td>
+            </tr>
+        </table>
+    </div>
+    <div id="react-dash-container">
+        <div id="root"></div>
+    </div>
 </body>

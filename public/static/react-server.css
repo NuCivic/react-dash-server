@@ -1,0 +1,12 @@
+#react-server-header {
+    width:60%;
+    margin: 2em 10% 4em 10%;
+    background-color: #eae6a1;
+    padding:20px;
+}
+
+td:first-child {width:12em !important}
+
+#react-dash-container {
+    border-top: 2px dashed grey
+}
