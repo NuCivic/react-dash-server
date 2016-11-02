@@ -16,7 +16,7 @@ This is a very loosely implemented test harness for [react dash](https://github.
 * Run the server: `node app.js`
 * create a gist with a [valid react-dash settings.js file](http://react-dashboard.readthedocs.io/en/latest/development/settings.js.html)
 * visit localhost:3333/:DASH_VERSION/GIST_ID
-* visit localost:3333/react-dashbaord to see the demo of the current library
+* visit localhost:3333/react-dashbaord to see the demo of the current library
 
 ## exampke of working gist
 ```json
